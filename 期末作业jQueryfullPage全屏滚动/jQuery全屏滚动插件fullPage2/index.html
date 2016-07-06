@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, maximum-scale=2.0">
+
+<link type="text/css" href="css/reset.css" rel="stylesheet">
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<link type="text/css" href="css/jquery.fullPage.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+$(function(){		
+	$('#fullpage').fullpage({
+        verticalCentered: true,
+        resize : true,
+		sectionsColor : ['#c2e5ff', '#c2e5ff', '#c2e5ff', '#c2e5ff', '#c2e5ff', '#c2e5ff', '#c2e5ff'],
+		anchors:['page_1', 'page_2', 'page_3', 'page_4', 'page_5', 'page_6', 'page_7'],
+        scrollingSpeed: 700,
+        easing: 'easeInQuart',
+        menu: true,
+        navigation: true,
+        navigationPosition: 'right',
+		navigationTooltips: ['Hp',
+		                     'Fragmentation : West Vs. East',
+							 'Mobile Brand Fragmentation : West Vs. East',
+							 'Mobile Device Fragmentation : West Vs. East',
+							 'Why Work with Hp?',
+							 'What Hp can do for developers?',
+							 'Team and Shareholders'],
+        loopBottom: false,
+        autoScrolling: true,
+        scrollOverflow: false,
+        css3: true,
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        //events
+        afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.page_2').find('.west_vs_east').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+				$('.page_3').find('.west_vs_east').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.page_4').find('.west_vs_east').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 5){
+				$('.page_5').find('ul,.operation_steps').fadeIn(2000);
+			}
+			if(index == 6){
+				$('.page_6').find('.introduction').delay(500).animate({
+					bottom: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 7){
+				$('.page_7').find('.group_shareholders').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == '2'){
+				$('.page_2').find('.west_vs_east').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '3'){
+				$('.page_3').find('.west_vs_east').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '4'){
+				$('.page_4').find('.west_vs_east').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '5'){
+				$('.page_5').find('ul,.operation_steps').fadeOut(2000);
+			}
+			if(index == '6'){
+				$('.page_6').find('.introduction').delay(500).animate({
+					bottom: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '7'){
+				$('.page_7').find('.group_shareholders').fadeOut(2000);
+			}
+		}
+    });
+})
+</script>
+</head>
+
+<body>
+<div id="fullpage">
+  <div class="section page_1">
+    <div class="bg"><img src="images/bg.jpg" alt=""></div>
+    <h1>Hp</h1>
+    <p>Sodium cyanide in Tianjin to be collected and neutralized soon</p>
+    <p>Sodium cyanide in Tianjin to be collected and neutralized soon</p>
+  </div>
+  <div class="section page_2">
+    <div class="wrap">
+      <h2>Sodium cyanide in Tianjin to be collected and neutralized soon</h2>
+      <div class="west_vs_east">
+        <table>
+          <tr>
+            <td style="border-right:#515151 solid 2px;"><div class="box west">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon</h3>
+              </div></td>
+            <td><div class="box east">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon</h3>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="section page_3">
+    <div class="wrap">
+      <h2>Sodium cyanide in Tianjin to be collected and neutralized soon</h2>
+      <div class="west_vs_east">
+        <table>
+          <tr>
+            <td style="border-right:#515151 solid 2px;"><div class="box west">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon.</h3>
+              </div></td>
+            <td><div class="box east">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon!</h3>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="section page_4">
+    <div class="wrap">
+      <h2>Sodium cyanide in Tianjin to be collected and neutralized soon</h2>
+      <div class="west_vs_east">
+        <table>
+          <tr>
+            <td style="border-right:#515151 solid 2px;"><div class="box west">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon</h3>
+              </div></td>
+            <td><div class="box east">
+                <h3>Sodium cyanide in Tianjin to be collected and neutralized soon!</h3>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="section page_5">
+    <div class="wrap">
+      <h2>Why Work with Hp?</h2>
+      <ul>
+        <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+        <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+        <li>Offer <span>65 MM+ fully tests</span> for <span>300,000+</span> mobile developers and <span>550,000+</span> apps worldwide.</li>
+        <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+          <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+          <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+      </ul>
+      <div class="operation_steps"><img src="images/img1.png" alt=""></div>
+    </div>
+  </div>
+  <div class="section page_6">
+    <div class="wrap">
+      <h2>What Hp can do for developers?</h2>
+      <div class="introduction">
+        <table>
+          <tr>
+            <td><div class="box first"> <strong>Sodium cyanide in Tianjin to be collected and neutralized soon</strong>
+                <ul>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                </ul>
+              </div></td>
+            <td><div class="box second"> <strong>eww & Swe Publish</strong>
+                <ul>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                </ul>
+              </div></td>
+            <td><div class="box third"> <strong>asas & Monetize</strong>
+                <ul>
+                    <li>Sodium cyanide in Tianjin to be collected and neutralized soon</li>
+                </ul>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="section page_7">
+    <div class="wrap">
+      <h2>Sodium cyanide in Tianjin to be collected and neutralized soon</h2>
+      <div class="group_shareholders">
+        <table>
+          <tr>
+            <td style="border-right:#515151 solid 2px;"><div class="box group">
+                <h3>Hp Group</h3>
+              </div></td>
+            <td><div class="box shareholders">
+                <h3>sdefdgr</h3>
+              </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
